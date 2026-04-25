@@ -95,10 +95,10 @@ def train_grpo(model_name="Qwen/Qwen2.5-0.5B-Instruct", output_dir="./checkpoint
     
     print("[GRPO] Beginning training loop...")
     # NOTE: Uncomment to actually train. Left commented to avoid blocking standard test runs.
-    # trainer.train()
+    trainer.train()
     
     print(f"[GRPO] Saving adapter to {output_dir}")
-    # trainer.model.save_pretrained(output_dir)
+    trainer.model.save_pretrained(output_dir)
     print("[GRPO] Training complete. (Simulation mode: model not actually saved)")
 
 if __name__ == "__main__":
