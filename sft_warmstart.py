@@ -102,7 +102,6 @@ def build_sft_config(
     return SFTConfig(
         output_dir=output_dir,
         dataset_text_field="text",
-        max_seq_length=max_seq_length,
         num_train_epochs=epochs,
         per_device_train_batch_size=batch_size,
         gradient_accumulation_steps=grad_accum,
