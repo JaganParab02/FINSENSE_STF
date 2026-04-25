@@ -78,8 +78,6 @@ def train_grpo(model_name="Qwen/Qwen2.5-0.5B-Instruct", output_dir="./checkpoint
         learning_rate=1e-5,
         per_device_train_batch_size=2,
         gradient_accumulation_steps=2,
-        max_prompt_length=128,
-        max_completion_length=64,
         num_train_epochs=1, # tiny run
         logging_steps=1,
     )
